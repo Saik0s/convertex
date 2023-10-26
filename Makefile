@@ -1,11 +1,12 @@
 install:
-	pip install -r requirements.txt
-	python setup.py install
+	poetry install
 
 test:
 	python -m unittest test.py
 
-sdist:
-	python setup.py sdist
+publish:
+	poetry build
+	poetry publish
+	rm -rf dist
 
-.PHONY: install test sdist
+.PHONY: install test publish

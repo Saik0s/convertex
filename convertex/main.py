@@ -81,7 +81,7 @@ class Convertex:
         return self.prompts.keys()
 
 
-async def main():
+async def async_main():
     parser = argparse.ArgumentParser(description="A utility tool for content transformation.")
     subparsers = parser.add_subparsers(dest="command")
 
@@ -116,5 +116,8 @@ async def main():
     else:
         parser.print_help()
 
+def main():
+    asyncio.run(async_main())
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

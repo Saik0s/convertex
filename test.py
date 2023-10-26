@@ -6,7 +6,7 @@ from marvin import ai_fn
 from rich.logging import RichHandler
 from rich.traceback import install
 
-from main import Convertex
+from convertex.main import Convertex
 
 install()
 
