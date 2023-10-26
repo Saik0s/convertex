@@ -5,7 +5,7 @@ Convertex is a helpful tool that assists with small text or code-based tasks. It
 To install Convertex, run the command:
 
 ```bash
-make install
+pip install convertex
 ```
 
 Here is a simple guide on how to use Convertex:
@@ -13,19 +13,19 @@ Here is a simple guide on how to use Convertex:
 1. Add a new prompt: Define the transformation rules using the command:
 
 ```bash
-python main.py add_prompt 'current content' 'desired content' 'additional info' 'prompt name'
+convertex add_prompt 'current content' 'desired content' 'additional info' 'prompt name'
 ```
 
 2. Transform content based on a prompt: Apply a prompt to your content using the command:
 
 ```bash
-python main.py transform_content 'prompt name' 'current content'
+convertex transform_content 'prompt name' 'current content'
 ```
 
 3. List all available prompts: View all your prompts with the command:
 
 ```bash
-python main.py list_prompts
+convertex list_prompts
 ```
 
 To test Convertex, run the following command:
